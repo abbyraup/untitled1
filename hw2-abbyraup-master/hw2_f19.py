@@ -28,29 +28,23 @@ print("The block of code in problem one executes 461 lines of code when run.")
 # part B) Summarize the contents of what prints, without giving a list of
 #        the values which print.
 
-print("The code in problem 1 starts with the values for i,j, and k being zero and "
-      "plugs those values into the equation on the fourth line of code. "
-      "The value is printed if there is no remainder when the output is divided by 13. "
-      "First it will loop through keeping i=0 and j=0 and having k values of 0 up to 9. "
-      "Then i=0,j=1, and k values zero to 9. "
-      "Then i=0,j=2, k values 0-9 and this keeps going through all the range values. "
-      "This keeps looping while only printing the values that are divisible by 13.")
+print("The code goes through the different values for the ranges of i,j, and k and plugs"
+      "the different combinations into the equation on line 3 or 4 depending on if you start with 0"
+      ";). If the result of the equation is divisible by 13, it prints and the output are those values"
+      "the output is multiples of 13 (starting with 0) with the last one being 195"
 
 # PROBLEM TWO: 
 # Copy, paste, and adjust the code from problem one so that all positive
 # multiples of 17 which are less than 300 will print.
-print("")
-print ("Problem two: ..... ..... ..... .....")
-b=0
-while b<300:
-    for i in range(2):
-        for j in range(10):
-            for k in range(10):
-                if not (k+10*j+100*i) % 17:
-                    print(k+10*j+100*i)
 
-    else:
-        break
+print("")
+print("Problem two: ..... ..... ..... .....")
+for i in range(3):
+    for j in range(10):
+        for k in range(10):
+            if not (k+10*j+100*i) % 17:
+                print(k+10*j+100*i)
+
 
 
 # PROBLEM THREE:
@@ -101,10 +95,11 @@ while(x+1<y):
 print(x,y,"x=y now!")
 
 
-#once x=y, the program does not stop
+#the problem is x equals y within the loop and then it keeps going and 1 is subtracted from y making x and y
+#no longer equal. so the code never sees that x equaled y within the loop and then doesn't stop
 #so i fixed it so it stops and doesnt do a continuous loop but I could not figure out how to get it to stop
 # and compare once they were both equal within the loop so I made it so that they would be equal coming out of the loop
-#idk i spent an hour tinkering on this problem and have to be done
+
 
     
 
