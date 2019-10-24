@@ -27,18 +27,14 @@ def my_dfa(s):
         elif current_node == 'q4' and current_character == '1':
             hist.append('q4')
         L.pop(0)
-    return(hist)
+    return(hist, boo(hist))
 
-"""
-
-
-        def fun():
-                if hist[-1]=='q3'or'q4':
-                return True
-                else:
-                return False
-        return (hist, fun())
+def boo(hist):
+    if hist[-1] in {'q3','q4'}:
+        return True
+    else:
+        return False
 
 
 
-"""
+
