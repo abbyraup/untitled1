@@ -13,7 +13,8 @@ def playGame(s):
        ('s6','w'):'s9',('s6','s'):'American University',('s6','d'):'s7',
        ('s6','w'):'s9',('s7','H'):'s10',('s9','H'):'s10',
        ('s9','b'):'s12',('s7','b'):'s12',('s6','b'):'s12',
-       ('s12','H'):'s10', ('s10','H'):'s15'   }
+       ('s12','H'):'s10', ('s10','H'):'s15',('s4','N'):'s16',
+       ('s16','N'):'s16',('s16','T'):'s4'}
     start_location='American University'
     current_location=''
     print('''
@@ -27,7 +28,7 @@ def playGame(s):
         reply=input("> ")
     current_location=d(current_location,reply)
     print("You are currently at "+current_location)
-    
+
     
 
         
