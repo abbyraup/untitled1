@@ -17,14 +17,21 @@ d={('American University','W'):'s0',('American University','w'):'s2',('American 
        ('s16','N'):'s16',('s16','T'):'s4',('s12','d'):'s7',('s1','N'):'American University',
        ('s15','N'):'s15',('s15','Y'):'American University'
        }
-prompt={('American University'):'''Press:/n W to take the Wonk Bus to Tenleytown. /nw to walk to Tenleytown.
+prompt={('American University'):'''You are at American University /nPress:/n W to take the Wonk Bus to Tenleytown. /nw to walk to Tenleytown.
     /nm to take the M4 bus to Tenleytown. /nU to take an Uber to Union Station.''',
-        ('s0'):'''The Wonk Bus broke down. /nPress: /nm to take the M4 bus /nw to walk''',
-        ('s1'):'''Press:/nY if you brought your UPass /nN if you did not bring your Upass''',
+        ('s0'):'''You got on the Wonk Bus, but the Wonk Bus broke down. /nPress: /nm to take the M4 bus /nw to walk''',
+        ('s1'):'''You decided to try to take the M4 bus. /nPress:/nY if you brought your UPass /nN if you did not bring your Upass''',
         ('s2'):'''Press:/nU to take the metro to Union station''',
         ('s3'):'''Press:/nA to go to Auntie Anne's to get a soft pretzel /nT to go right to the train''',
         ('s5'):'''Press:/nA to go to Auntie Anne's to get a cinnamon and sugar pretzel /na to get a regular soft pretzel /nT to go to the train''',
-        ('s4'):''''''
+        ('s4'):'''Press:/nN to take the train to NYC /nP to take the train to Philadelphia''',
+        ('s16'):'''Press/nT to take the train back to Union Station /nN to stay in NYC''',
+        ('s6'):'''Press: /nb to go to the bathroom /nw to wait for your next train /nd to go to Dunkin' Donuts /ns to go to Starbucks''',
+        ('s7'):'''You got Dunkin /nPress: /nb to go to the bathroom /nH to take the train to Harrisburg''',
+        ('s9'):'''You are waiting for your train./nPress:/nb to use the bathroom /nH to board the train to Harrisburg''',
+        ('s12'):'''You are at the bathroom. /nPress:/nH to board the train to Harrisburg/nd to go to Dunkin' Donuts''',
+        ('s10'):'''You are in Harrisburg/nPress:/nH to get in the car to go home''',
+        ('s15'):'''You made it home!/nPress:/nY to play again/nN to stay at home'''
         }
 
 #need to add variation to s5 to include cinnamon v plain pretzel. plain you go back to start. cinnamon stay at auntie annes
