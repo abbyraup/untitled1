@@ -2,11 +2,11 @@
 
 name=input("What is your name?")
 print("Welcome",name)
-print("The goal of this game is to go from American University to HOME with your brother. Good luck.")
+print("The goal of this game is to go from American University to home. Good luck.")
 
 
 def playGame(s):
-d={('American University','W'):'s0',('American University','w'):'s2',('American University','m'):'s1',
+    d={('American University','W'):'s0',('American University','w'):'s2',('American University','m'):'s1',
        ('American University','U'):'s3',('s1','Y'):'s2',('s0','w'):'s2',
        ('s2','U'):'s3',('s3','A'):'s5',('s3','T'):'s4',
        ('s5','T'):'s4',('s5','A'):'American University', ('s4','P'):'s6',
@@ -17,7 +17,7 @@ d={('American University','W'):'s0',('American University','w'):'s2',('American 
        ('s16','N'):'s16',('s16','T'):'s4',('s12','d'):'s7',('s1','N'):'American University',
        ('s15','N'):'s15',('s15','Y'):'American University'
        }
-prompt={('American University'):'''You are at American University /nPress:/n W to take the Wonk Bus to Tenleytown. /nw to walk to Tenleytown.
+    prompt={('American University'):'''You are at American University /nPress:/n W to take the Wonk Bus to Tenleytown. /nw to walk to Tenleytown.
     /nm to take the M4 bus to Tenleytown. /nU to take an Uber to Union Station.''',
         ('s0'):'''You got on the Wonk Bus, but the Wonk Bus broke down. /nPress: /nm to take the M4 bus /nw to walk''',
         ('s1'):'''You decided to try to take the M4 bus. /nPress:/nY if you brought your UPass /nN if you did not bring your Upass''',
@@ -58,5 +58,5 @@ prompt={('American University'):'''You are at American University /nPress:/n W t
 
 
 
- if __name__ == '__main__':   
+    if __name__ == '__main__':
        playGame() 
